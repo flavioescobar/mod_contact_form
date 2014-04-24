@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>Formulário de Contato</name>
+	<author>Flávio Escobar</author>
+	<creationDate>Dezembro 2013</creationDate>
+	<copyright>Copyright (C) 2013 Flávio Escobar. Todos os direitos reservados.</copyright>
+	<authorEmail>flavioescobar1@gmail.com</authorEmail>
+	<authorUrl>www.flavioescobar.com.br</authorUrl>
+	<version>1.0.0</version>
+	<description>Módulo para exibir um formulário de contato.</description>
+	
+	<files>
+		<filename module="mod_contact_form">mod_contact_form.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<media folder="media" destination="mod_contact_form">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="Basic" addfieldpath="/administrator/components/com_contact/models/fields">
+				<field name="id"
+					type="modal_contact"
+					description="Pressione o botão para mostrar e selecione um contato da lista"
+					label="Selecione um Contato"
+					required="true"
+					edit="true"
+					clear="false"
+				/>
+			</fieldset>
+		</fields>
+	</config>	
+</extension>
