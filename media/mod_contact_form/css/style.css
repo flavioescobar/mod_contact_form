@@ -1,0 +1,20 @@
+.msg_sucesso {
+    background: url("../images/box_success.png") no-repeat scroll 0 0 #FAFFE6;
+    border: 1px solid #DCE6BE;
+}
+
+.msg_falha {
+    background: url("../images/box_warning.png") no-repeat scroll 0 0 #FFF0EB;
+    border: 1px solid #FFD7CD;
+}
+
+.msg_carregando {
+    background: url("../images/box_info.png") no-repeat scroll 0 0 #EBF5FA;
+    border: 1px solid #D2DCE1;
+}
+
+.msg_box {
+    height: 26px;
+    padding: 14px 0 0 40px;
+    display: none;
+}
